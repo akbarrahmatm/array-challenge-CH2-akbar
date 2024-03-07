@@ -6,11 +6,20 @@ function filterCarByAvailability(cars) {
   const result = [];
 
   // Tulis code-mu disini
-  cars.forEach((car) => {
-    if (car.available === true) {
-      result.push(car);
+  // cars.forEach((car) => {
+  //   if (car.available === true) {
+  //     result.push(car);
+  //   }
+  // });
+
+  for (let i = 0; i < cars.length; i++) {
+    // const element = array[i];
+    if (cars[i].available === true) {
+      result.push(cars[i]);
     }
-  });
+  }
+
+  // console.log(result);
 
   // console.log(result);
 
